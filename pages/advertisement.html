@@ -1,0 +1,564 @@
+<!--Declaration of html5-->
+<!doctype html>
+
+<!--Starting html tag-->
+<html>
+
+	<!--Starting of head-->
+	<head>
+    
+    	<!--For giving title of the webpage-->
+		<title>Advertisement | Fairy Tail</title>
+        
+		<meta name="Advertisement page for anime Fairy Tail" content="This page contains description and information regarding mangas of Fairy Tail">
+        
+        <!--Linking to external CSS in order to use various id and class of external CSS-->
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        
+        <!-- For the logo icon in the Tab -->
+		<link rel="icon" href="../images/logo.png">
+        
+        <!--In order to have wrapper on the top-->
+        <style type-"test/css">
+			
+			/* 
+			 * For defining the style of text that are written for description.
+			 */
+			.description
+			{
+				font-family:Bookman Old Style; 
+				font-size:20px;
+			}
+			
+			/* 
+			 * For defining the style for the titles of manga.
+			 */
+			.mangaTitle
+			{
+				text-decoration:none; 
+				color:#000; 
+				font-size:25px;
+				font-family:Charlemagne Std;
+				align:center;
+			}
+			
+			/* 
+			 * For defining the style of text inside of the form of feedback.
+			 */
+			#space
+			{
+				font-family:Elephant; 
+				font-size:20px;
+				margin:20px 0px 0px 0px;
+			}
+			
+			/* 
+			 * For changing the color of titles of manga in case if mouse is hovered on it.
+			 */
+			#listingManga:hover
+			{
+				color: #C96;
+			}
+			
+			/*
+			 * For designing submit and reset button
+			 */
+			.button
+			{
+				 font-size:22px; 
+				 background:#000; 
+				 color:#FC0; 
+				 border-radius:6px;
+				 border:none;
+				 cursor: pointer;
+			}
+			
+			/*
+			 * For changing colour in case of hover in submit and reset button
+			 */
+			.button:hover
+			{
+				 font-size:22px; 
+				 background:#600; 
+				 color:#FFF; 
+				 border-radius:6px;
+				 border:none;
+				 cursor: pointer;
+			}
+				
+		</style>
+        
+         <script language="JavaScript">
+			var i = 0;
+			var path = new Array();
+			 
+			// LIST OF IMAGES
+			path[0] = "../images/images_1.jpg";
+			path[1] = "../images/images_2.png";
+			path[2] = "../images/images_3.png";
+			path[3] = "../images/images_4.png";
+			
+			function swapImage()
+			{
+			   document.slide.src = path[i];
+			   if(i < path.length - 1) i++; else i = 0;
+			   setTimeout("swapImage()",4000);
+			}
+			
+			window.onload=swapImage;
+			
+			function validateForm123()
+			{
+				if (document.nameForm.fname.value=="")
+				{
+					alert("First name must be filled out");
+					return false;
+				}
+				
+				display();
+			}
+			
+			function display()
+			{
+				DisplayWindow123 = window.open('','NewWin','width=300,height=200');
+				message = "<b>NAME: </b>" + document.nameForm.fname.value;
+				DisplayWindow123.document.write(message);
+			}
+		
+
+		</script>
+        
+	</head>
+	<!--Ending of head-->
+
+	<!--Starting of body-->
+	<body style ="background-color: #999;">
+    
+		<!--For Wrapper-->
+		<div style="background-color: #000; width: 1600px; height: 1610px; margin: 0px auto">
+		
+			<!--For header-->
+			<header class="header">
+			
+				<!--For linking logo-->
+				<a href="../index.html">
+				
+				<!--For Logo-->
+				<img src="../images/pic_fairy_tale.jpg" class="logo" title="Logo">
+				</a>
+				
+				<!--for navigation bar-->
+				<nav class="navBackgroundHeader">
+						
+					<!--for navigation link-->   
+					<ul style="list-style:none; padding-top:100px;">
+					
+						<li style="float:left;">
+							<a href="../index.html" class="headerNavDecoration">
+                            	<div class="navLink" style="width:60px; margin: 0px 20px 52px 20px;">
+									Home
+                            	</div>
+                                
+							</a>
+						</li> 
+						
+						<li style="float:left;">
+							<a href="../pages/pictures.html" class="headerNavDecoration">
+                            	<div class="navLink" style="width:100px; margin: 0px 20px 52px 20px;">
+									Pictures
+                                </div>
+                                
+							</a>	
+						</li>
+						
+						<li style="float:left;">
+							<a href="../pages/episodes.html" class="headerNavDecoration">
+                            	<div class="navLink" style="width:100px; margin: 0px 20px 52px 20px;">
+									Episodes
+                                </div>
+                                
+							</a>	
+						</li>
+						
+						<li style="float:left;">
+							<a href="../pages/promotionalVideos.html" class="headerNavDecoration">	
+                            	<div class="navLink" style="width:230px; margin: 0px 20px 52px 20px;">
+                            		Promotional Videos
+                                </div>
+								
+							</a>	
+						</li>
+						
+						<li style="float:left;">
+							<a href="../pages/characters.html" class="headerNavDecoration">
+                            	<div class="navLink" style="width:130px; margin: 0px 20px 52px 20px;">
+									Characters
+                                </div>
+							</a>	
+						</li>
+						
+						<li style="float:left;">
+							<a href="../pages/advertisement.html" class="headerNavDecoration">
+                            	<div class="navLink" style="width:280px; margin: 0px 20px 52px 20px;" id="selectedHeader">
+									Advertisement & Manga
+                                </div>
+                                    
+							</a>	
+						</li>
+						
+					</ul>
+					<!--End of navigation link-->
+					
+				</nav>
+				<!--end of navigation bar-->
+						
+					<!--image of header-->
+					<img src="../images/all_dragon_slayers_photos_fairy_tail.jpg" class="imageOfHeader" title="Dragon Slayer of Fairy Tail" usemap="#Dragon_Slayers">
+                    
+                    <!--Starting of image mapping-->
+                    <map name="Dragon_Slayers">
+                    
+                    	<!--Giving rectangular co-rdinate for face of Rogue-->
+                    	<area shape="rect" coords="65,5,140,70" href="http://myanimelist.net/character/51153/Rogue_Cheney?q=Rogue" alt="Rogue" title="Rogue Cheney"  target="_blank;">
+                        
+                        <!--Giving rectangular co-ordiate for the face of Sting-->
+                        <area shape="rect" coords="250,15,325,70" href="http://myanimelist.net/character/51171/Sting_Eucliffe?q=Sting%20" alt="Sting" title="Sting Eucliffe" target="_blank;">
+                        
+                        <!--Giving rectangular co-ordiate for the face of Cobra-->
+                        <area shape="rect" coords="385,10,520,90" href="http://myanimelist.net/character/30009/Cobra" alt="Cobra" title="Cobra" target="_blank;">
+                        
+                        <!--Giving rectangular co-ordiate for the face of Laxus-->
+                        <area shape="rect" coords="650,0,775,100" href="http://myanimelist.net/character/8294/Laxus_Dreyar?q=Laxus%20of%20" alt="Laxus" title="Laxus Dreyar" target="_blank;">
+                        
+                        <!--Giving rectangular co-ordiate for the face of Natsu-->
+                        <area shape="rect" coords="785,0,1075,170" href="http://myanimelist.net/character/5187/Natsu_Dragneel" alt="Natsu" title="Natsu Dragneel" target="_blank;">
+                        
+                        <!--Giving rectangular co-ordiate for the face of Wendy-->
+                        <area shape="rect" coords="1125,10,1310,110" href="http://myanimelist.net/character/28886/Wendy_Marvell" alt="Wendy" title="Wendy Marvell" target="_blank;">
+                        
+                        <!--Giving rectangular co-ordiate for the face of Gajreel-->
+                        <area shape="rect" coords="1320,0,1450,110" href="http://myanimelist.net/character/16893/Gajeel_Redfox?q=Gajreel%20Metal%20Dragon%20Slayer" alt="Gajeel" title="Gajeel Redfox" target="_blank;">
+                        
+                    </map>
+                    <!--Ending of image mapping-->
+						
+			</header> 
+			<!--Ending of header-->
+			
+			<!--Start of main-->
+			<main style="background-color:#000; ">
+				
+				<!-- for the main of body part-->
+				<div style="background-color:#FFF; width:1580px; height:1110px; margin:0px 0px 0px 9px;">
+				
+					<!-- For the first main of body part-->
+					<div style="background-color:#FFF; width:800px; height: 1000px;float:left;margin:15px 20px 10px 50px;">    
+					
+						<!-- For image in first main-->
+						<img src="../images/images_1.jpg" style="width:800px; height:600px;" name="slide">
+                        
+						<!--Heading for description-->
+						<h1 style="font-family:Algerian; font-size:30px;">Description</h1>
+                        
+                        <br>
+						
+						<!--For giving some information-->
+						<p class="description">
+							<b>Manga Titles: Fairytail, Fairy Tale</b>
+						</p>
+                        
+                        <br>
+						
+						<!--For writing Description-->
+						<p style="text-align:justify;" class="description">
+							Welcome to a world filled with magic spells, flying cats, and exhibitionist ice mages! We travel to the land of Fiore, where we stumble upon Fairy Tail; a mage guild with the most outrageous and interesting people you can find. This particular tale begins with a very a typical "boy meets girl".  
+						</p>
+						
+                        <br>
+						<!--For giving information about fairy tail-->
+						<p style="float:left;" class="description">
+							<i>Status: Ongoing</i>
+						</p>
+						
+						<!--For giving information about fairy tail-->
+						<p style="float:right;" class="description">
+							<i>Released:2006</i>
+						</p>
+					
+					</div>
+					<!--Ending of first main of body part-->
+					
+					<!-- For the second main of body part-->
+					<div style="background-color:#FFF; width:600px; height: 1000px;float:left;margin:15px 20px 10px 55px;">
+					 	
+						<!--Heading for description-->
+						<h1 style="font-family:Algerian; font-size:30px;"><center>Read Manga of Fairy Tail Online</center></h1>
+						
+						<!--List of mangas-->
+						<ul style="list-style:none; padding-top:20px;">
+						
+							<li style="float:left;">
+								<a href="http://www.mangabb.co/fairy-tail/chapter-476" target="_blank;" class="mangaTitle" id="listingManga">
+									Fairy Tail Chapter 476: Mar 07, 2016 
+								</a>	
+							</li>
+							
+							<li style="float:left;">
+								<a href="http://www.mangabb.co/fairy-tail/chapter-475" target="_blank;" class="mangaTitle" id="listingManga">
+									Fairy Tail Chapter 475: Feb 29, 2016 
+								</a>
+							</li>
+							
+							<li style="float:left;">
+								<a href="http://www.mangabb.co/fairy-tail/chapter-474" target="_blank;" class="mangaTitle" id="listingManga">
+									Fairy Tail Chapter 474: Feb 22, 2016  
+								</a>
+							</li>
+							
+							<li style="float:left;">
+								<a href="http://www.mangabb.co/fairy-tail/chapter-473" target="_blank;" class="mangaTitle" id="listingManga">
+									Fairy Tail Chapter 473: Feb 15, 2016 
+								</a>
+							</li>
+							
+							<li style="float:left;">
+								<a href="http://www.mangabb.co/fairy-tail/chapter-472" target="_blank;" class="mangaTitle" id="listingManga">
+									Fairy Tail Chapter 472: Feb 08, 2016 
+								</a>
+							</li>
+							
+							<li style="float:left;">
+								<a href="http://www.mangabb.co/fairy-tail/chapter-471" target="_blank;" class="mangaTitle" id="listingManga">
+									Fairy Tail Chapter 471: Feb 01, 2016  
+								</a>
+							</li>
+							
+							<li style="float:left;">
+								<a href="http://www.mangabb.co/fairy-tail/chapter-470" target="_blank;" class="mangaTitle" id="listingManga">
+									Fairy Tail Chapter 470: Jan 25, 2016   
+								</a>
+							</li>
+							
+							<li style="float:left;">
+								<a href="http://www.mangabb.co/fairy-tail/chapter-469" target="_blank;" class="mangaTitle" id="listingManga">
+									Fairy Tail Chapter 469:	Jan 18, 2016  
+								</a>
+							</li>
+							
+							<li style="float:left;">
+								<a href="http://www.mangabb.co/fairy-tail/chapter-468" target="_blank;" class="mangaTitle" id="listingManga">
+									Fairy Tail Chapter 468: Jan 09, 2016   
+								</a>
+							</li>
+								
+							<li style="float:left;">
+								<a href="http://www.mangabb.co/fairy-tail/chapter-467" target="_blank;" class="mangaTitle" id="listingManga">
+									Fairy Tail Chapter 467: Jan 04, 2016   
+								</a>
+							</li>
+							
+							<li style="float:left;">
+								<a href="http://www.mangabb.co/fairy-tail/chapter-466" target="_blank;" class="mangaTitle" id="listingManga">
+									Fairy Tail Chapter 466: Dec 16, 2015    
+								</a>
+							</li>
+							
+							<li style="float:left;">
+								<a href="http://www.mangabb.co/fairy-tail/chapter-465" target="_blank;" class="mangaTitle" id="listingManga">
+									Fairy Tail Chapter 465: Dec 07, 2015
+								</a>
+							</li>
+							
+						</ul>
+						<!--Ending of List of mangas-->
+						
+                        <!--div made for making a form-->
+                        <div style="background-color:#F90; width:600px; height: 590px;float:left; padding-top:20px; margin:20px 0px 0px 0px; border:1px solid; box-shadow: 10px 10px 5px 0px">
+							                        	
+                            <!--For keeping the text at center-->
+                        	<center style="font-family:AR ESSENCE;font-size:30px;">
+                        		Do You Like this Website???
+                                <br>
+                                Give Us Your Feedback
+                        	</center>
+                            <!--Ending of text that should be kept at center-->
+                            
+                            <!--Staarting of form-->
+                            <form name="nameForm" action="hrishav.tandukar@gmail.com" onSubmit="return validateForm123()">
+                            
+                            <br>
+                            	
+                                <!--For creating space for first name-->
+                                <tr>
+                                	<td> <small id="space"><center>First Name </center></small>
+                                    </td>
+                                    
+	                                <td> <center><input type="text" name="fname" placeholder="Enter your first name" style="height:40px; width:400px; font-size:15px; " required> </center>
+                                    </td>
+                                    
+                                </tr>
+                                <!--Ending of space for first name-->
+                                
+                                <br>
+                                
+                                 <!--For creating space for last name-->
+                                <tr>
+                                	<td> <small id="space"><center>Last Name </center></small>
+                                    </td>
+                                    
+	                                <td> <center><input type="text" name="lname" placeholder="Enter your last name" style="height:40px; width:400px; font-size:15px;" required> </center>
+                                    </td>
+                                    
+                                </tr>
+                                <!--Ending of space for last name-->
+                                
+                                <br>
+                                
+                                 <!--For creating space for E-mail address-->
+                                <tr>
+                                	<td> <small id="space"><center>E-mail Address</center></small>
+                                    </td>
+                                    
+	                                <td> <center><input type="email" name="EmailAddress" placeholder="Enter your E-mail address" style="height:40px; width:400px; font-size:15px; " required> </center>
+                                    </td>
+                                    
+                                </tr>
+                                <!--Ending of space for E-mail address-->
+                                
+                                <br>
+                                
+                                <!--For creating space for text box-->
+                                <tr>
+                                	<td> <small id="space"><center>Comment Here!!!</center></small>
+                                    </td>
+                                    
+	                                <td> <center>
+                                    		<textarea rows="7" cols="43" style="font-size:15px;" required> 
+                                            </textarea>
+                                         </center>
+                                    
+                                    </td>
+                                    
+                                </tr>
+                                <!--Ending of space for text box-->
+                                
+                                <br>
+                                
+                                <!--For creating Sumit button-->
+                                <tr>
+                                    <center>
+	                                <td> 
+                                    	<div>
+                                        	<input type="Submit" name="Submit" style="float:right; margin:0px 110px 0px  0px;" class="button" action="mail-to:hrishav.tandukar@gmail.com;" >
+                                        </div>
+                                    </td>
+                                    
+                                    <td>
+                                    <div>
+                                    	<input type="Reset" name="Reset" style="float:left; margin: 0px 0px 0px 110px" class="button">
+                                    </div>
+                                    </td>
+                                    </center>
+                                    
+                                </tr>
+                                <!--Ending of space for E-mail address-->
+                                
+                                <br>
+                                              
+                            </form>
+                            <!--Ending of form-->
+                        
+                        </div>
+                        <!--Ending of div for making form-->
+                        
+					</div>
+					<!-- Ending of second main of body part-->
+					 
+				</div>
+				<!--Ending of main body part-->
+
+			</main>
+			<!--Ending of main-->
+			
+			<!--For footer-->
+			<footer>
+			
+				<small class="copyright"> COPYRIGHT &copy; 2016 </small>
+				
+				<!--for navigation bar-->
+				<nav class="navBackgroundFooter">
+					
+					<!--for navigation link-->   
+					<ul style="list-style:none;">
+					
+						<li style="float:left;">
+							<a href="../index.html" id="footerNavDecoration">
+                            	<div class="footerNav">
+									|| Home | 
+                             	</div>
+                                
+							</a>
+						</li> 
+						
+						<li style="float:left;">
+							<a href="../pages/pictures.html" id="footerNavDecoration">
+                            	<div class="footerNav">
+									| Pictures |
+                                </div>
+                                
+							</a>	
+						</li>
+						
+						<li style="float:left;">
+							<a href="../pages/episodes.html" id="footerNavDecoration">
+                            	<div class="footerNav">
+									| Episodes |
+                                </div>
+                                
+							</a>	
+						</li>
+						
+						<li style="float:left;">
+							<a href="../pages/promotionalVideos.html" id="footerNavDecoration">
+                            	<div class="footerNav">
+									| Promotional Videos |
+                                </div>
+                                 
+							</a>	
+						</li>
+						
+						<li style="float:left;">
+							<a href="../pages/characters.html" id="footerNavDecoration">
+                            	<div class="footerNav">
+									| Characters |
+                                </div>
+                                
+							</a>	
+						</li>
+						
+						<li style="float:left;">
+							<a href="../pages/advertisement.html" id="footerNavDecoration">
+                            	<div class="footerNav" id="selectedFooter">
+									| Advertisement & Manga ||
+                                </div>
+                                
+							</a>	
+						</li>
+						
+					</ul>
+					<!--End of navigation link-->
+				
+				</nav>
+				<!--end of navigation bar-->
+			
+			</footer>
+			<!--Ending of footer-->
+			
+		</div>
+		<!--Ending of div for wrapper-->
+	
+	</body>
+    <!--Ending of body-->
+    
+</html>
+<!--Ending of html tag-->

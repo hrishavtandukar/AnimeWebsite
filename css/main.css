@@ -1,0 +1,124 @@
+
+*
+{
+	margin:0px;
+}
+
+/* 
+ * For changing the colour of header of nav bar in case of hover.
+ */
+.navLink:hover
+{
+	color: #900;
+	background-color: #CCC;
+	padding-left:6px;
+}
+
+/* 
+ * For changing the colour of footer of bar in case of hover.
+ */			
+.footerNav:hover
+{
+	color: #FC0;
+}
+
+/* 
+ * For changing the colour header of selected webpage in nav bar.
+ */
+#selectedHeader
+{
+	color: #000;
+	background-color: #999;
+	padding-left:6px;
+}
+
+/* 
+ * For changing the colour footer of selected webpage in footer nav bar.
+ */
+#selectedFooter
+{
+	color: #93C;
+}
+
+/* 
+ * For defining the text style and colour of header of navigation bar.
+ */
+.headerNavDecoration
+{
+	text-decoration:none; 
+	color:white; 
+	font-size:25px;
+	font-family: AR JULIAN;
+}
+
+/* 
+ * For defining the colour and style of text of footer of navigation bar.
+ */			
+#footerNavDecoration
+{
+	text-decoration:none; 
+	color:white; 
+	font-size:20px;
+	font-family: AR JULIAN;
+}
+
+/* 
+ * Defining the size of image of logo of header of navigation bar.
+ */			
+.logo
+{
+	width:375px; 
+	height:170px; 
+	float:left;
+}
+
+/* 
+ * Defining the size of image of header below the navigation bar.
+ */			
+.imageOfHeader
+{
+	width:1580px; 
+	height:270px;
+	margin:0px 0px 0px 9px;
+}
+
+/* 
+ * For changing the background colour of header of selected webpage in nav bar.
+ */
+.navBackgroundFooter
+{
+	background-color:black; 
+	width:1600px; 
+	height:30px;
+}
+
+/* 
+ * For changing the background colour of header of selected webpage in nav bar.
+ */
+.navBackgroundHeader
+{
+	background-color:black; 
+	width:1600px; 
+	height:50px;
+}
+
+/* 
+ * Defining the style of copyright text of footer.
+ */
+.copyright
+{
+	color:white;
+	font-size:25px; 
+	float:right; 
+	padding-right:20px;
+}
+
+/* 
+ * For changing the background color of header.
+ */
+.header
+{
+	background-color: black;
+	width: 1600px; 
+	height: 450px;
+}

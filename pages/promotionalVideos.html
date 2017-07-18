@@ -1,0 +1,418 @@
+<!--Declaration of html5-->
+<!doctype html>
+
+<!--Starting html tag-->
+<html>
+
+	<!--Starting of head-->
+	<head>
+    
+    	<!--For giving title of the webpage-->
+		<title>Promotional Videos | Fairy Tail</title>
+        
+		<meta name="Promotional videos page of anime Fairy Tail" content="This page contains various promotional videos of anime Fairy Tail">
+        
+        <!--Linking to external CSS in order to use various id and class of external CSS-->
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        
+        <!-- For the logo icon in the Tab -->
+		<link rel="icon" href="../images/logo.png">
+        
+        <!--In order to have wrapper on the top-->
+        <style type-"test/css">
+		
+			/* 
+			 * For defining the style written in information list.
+			 */
+			#informationList
+			{
+				font-family:Bookman Old Style; 
+				font-size:20px;
+			}
+			
+			/* 
+			 * For defining the style for heading of videos.
+			 */
+			.heading
+			{
+				font-family:AR ESSENCE; 
+				font-size:30px;
+			}
+			
+			/* 
+			 * In order to change the color of heading of videos in case of hover on those images.
+			 */
+			#headingOfVideos:hover
+			{
+				color: #F63;
+			}
+			
+			/* 
+			 * For keeping iframes
+			 */
+			.video iframe
+			{
+				vertical-allign:bottom;
+			}
+			
+		</style>
+        
+		<script type="text/javascript">
+		//For changing picture on click.
+		var image_traker='o';
+		function change()
+		{
+			var image=document.getElementById('social');
+			image.src="../images/small_fairy_tail_guild_photo.png"
+			if (image_traker=='o')
+			{
+				image.src='../images/SmallPictureFairyTaleGroup.png';
+				image_traker='t';
+			}
+			else
+			{
+				image.src='../images/small_fairy_tail_guild_photo.png';
+				image_traker='o';
+			}
+		}
+		</script>
+	</head>
+	<!--Ending of head-->
+
+	<!--Starting of body-->
+	<body style ="background-color: #999;">
+    
+		<!--For Wrapper-->
+		<div style="background-color: #000; width: 1600px; height: 1380px; margin: 0px auto">
+		
+			<!--For header-->
+			<header class="header">
+			
+				<!--For linking logo-->
+				<a href="../index.html">
+				
+					<!--For Logo-->
+					<img src="../images/pic_fairy_tale.jpg" class="logo" title="Logo">
+			
+				</a>
+				<!--Ending of link of logo-->
+			
+				<!--for navigation bar-->
+				<nav class="navHeaderBackground">
+						
+					<!--for navigation link-->   
+					<ul style="list-style:none; padding-top:100px;">
+					
+						<li style="float:left;">
+							<a href="../index.html" class="headerNavDecoration">
+                            	<div class="navLink" style="width:60px; margin: 0px 20px 52px 20px;">
+									Home
+                            	</div>
+                                
+							</a>
+						</li> 
+						
+						<li style="float:left;">
+							<a href="../pages/pictures.html" class="headerNavDecoration">
+                            	<div class="navLink" style="width:100px; margin: 0px 20px 52px 20px;">
+									Pictures
+                                </div>
+                                
+							</a>	
+						</li>
+						
+						<li style="float:left;">
+							<a href="../pages/episodes.html" class="headerNavDecoration">
+                            	<div class="navLink" style="width:100px; margin: 0px 20px 52px 20px;">
+									Episodes
+                                </div>
+                                
+							</a>	
+						</li>
+						
+						<li style="float:left;">
+							<a href="../pages/promotionalVideos.html" class="headerNavDecoration">	
+                            	<div class="navLink" style="width:230px; margin: 0px 20px 52px 20px;" id="selectedHeader">
+                            		Promotional Videos
+                                </div>
+								
+							</a>	
+						</li>
+						
+						<li style="float:left;">
+							<a href="../pages/characters.html" class="headerNavDecoration">
+                            	<div class="navLink" style="width:130px; margin: 0px 20px 52px 20px;">
+									Characters
+                                </div>
+							</a>	
+						</li>
+						
+						<li style="float:left;">
+							<a href="../pages/advertisement.html" class="headerNavDecoration">
+                            	<div class="navLink" style="width:280px; margin: 0px 20px 52px 20px;">
+									Advertisement & Manga
+                                </div>
+                                    
+							</a>	
+						</li>
+						
+					</ul>
+					<!--End of navigation link-->
+				
+				</nav>
+				<!--end of navigation bar-->
+						
+				<!--image of header-->
+					<img src="../images/all_dragon_slayers_photos_fairy_tail.jpg" class="imageOfHeader" title="Dragon Slayer of Fairy Tail" usemap="#Dragon_Slayers">
+                    
+                    <!--Starting of image mapping-->
+                    <map name="Dragon_Slayers">
+                    
+                    	<!--Giving rectangular co-rdinate for face of Rogue-->
+                    	<area shape="rect" coords="65,5,140,70" href="http://myanimelist.net/character/51153/Rogue_Cheney?q=Rogue" alt="Rogue" title="Rogue Cheney"  target="_blank;">
+                        
+                        <!--Giving rectangular co-ordiate for the face of Sting-->
+                        <area shape="rect" coords="250,15,325,70" href="http://myanimelist.net/character/51171/Sting_Eucliffe?q=Sting%20" alt="Sting" title="Sting Eucliffe" target="_blank;">
+                        
+                        <!--Giving rectangular co-ordiate for the face of Cobra-->
+                        <area shape="rect" coords="385,10,520,90" href="http://myanimelist.net/character/30009/Cobra" alt="Cobra" title="Cobra" target="_blank;">
+                        
+                        <!--Giving rectangular co-ordiate for the face of Laxus-->
+                        <area shape="rect" coords="650,0,775,100" href="http://myanimelist.net/character/8294/Laxus_Dreyar?q=Laxus%20of%20" alt="Laxus" title="Laxus Dreyar" target="_blank;">
+                        
+                        <!--Giving rectangular co-ordiate for the face of Natsu-->
+                        <area shape="rect" coords="785,0,1075,170" href="http://myanimelist.net/character/5187/Natsu_Dragneel" alt="Natsu" title="Natsu Dragneel" target="_blank;">
+                        
+                        <!--Giving rectangular co-ordiate for the face of Wendy-->
+                        <area shape="rect" coords="1125,10,1310,110" href="http://myanimelist.net/character/28886/Wendy_Marvell" alt="Wendy" title="Wendy Marvell" target="_blank;">
+                        
+                        <!--Giving rectangular co-ordiate for the face of Gajreel-->
+                        <area shape="rect" coords="1320,0,1450,110" href="http://myanimelist.net/character/16893/Gajeel_Redfox?q=Gajreel%20Metal%20Dragon%20Slayer" alt="Gajeel" title="Gajeel Redfox" target="_blank;">
+                        
+                    </map>
+                    <!--Ending of image mapping-->
+						
+			</header> 
+			<!--Ending of header-->
+			
+			<!--Start of main-->
+			<main style="background-color:#000;">
+			
+				<!-- for the main of body part-->
+				<div style="background-color:#FFF; width:1580px; height:870px; margin:0px 0px 0px 9px;">
+				
+					<!--For first main of body part-->
+					<div style="background-color:#FFF; width:300px; height: 850px;float:left;margin:15px 20px 10px 20px;">
+					
+						<!--For image in first main-->
+						<img src="../images/SmallPictureFairyTaleGroup.png" style="width:300px; height:200px; cursor:pointer;"  title= "Team of Fairy Tail" id="social" onclick="change();" title= "Team of Fairy Tail">
+						
+						<h1 style="font-family:Broadway; font-size:20px;">
+							Information:
+						</h1>
+							
+						<!--Starting of unordered list-->
+						<ul style="padding-right:20px;">
+								
+							<li id="informationList"> 
+								Genres: Action, Adventure, Comedy, Fantasy, Magic, Shounen
+							</li>
+							
+							<li id="informationList"> 
+								Producers: TV Tokyo, Dentsu, Pony Canyon, Kodansha, DAX Production, Sakura Create 
+							</li>
+							
+							<li id="informationList"> 
+								Licensors: FUNimation Entertainment
+							</li>
+							
+							<li id="informationList"> 
+								Status: Ongoing
+							</li>
+							
+							<li id="informationList"> 
+								Source: Manga 
+							</li>
+							
+							<li id="informationList"> 
+								Released: 2006 
+							</li>
+							
+							<li id="informationList"> 
+								Duration: 24 min. per episode 
+							</li>
+							
+							<li id="informationList"> 
+								Rating: PG-13 - Teens 13 or older
+							</li>
+								
+						</ul>
+						<!--Ending of unordered list-->
+				
+					</div>
+					<!-- Ending of First main-->
+					
+					<!-- For the second main of body part-->
+					<div style="background-color:#FFF; width:530px; height: 850px;float:left;margin:15px 20px 10px 60px;">
+					
+						<!--For linking first promotional video-->
+						<a href="https://www.youtube.com/watch?v=wXxf43oBMlY" style="text-decoration:none; color:#000; font-size:25px;font-family: AR ESSENCE; padding-left:52px;" target="_blank;">
+						
+							<!-- For heading of first main-->
+							<h1 class="heading" id="headingOfVideos">Promotional Video 1:</h1>
+                            
+                            <!-- For keeping video of iframe-->
+                            <div class="video">
+                            
+								<!--For keeping the image of promotional videos-->
+								<iframe style="width:530px; height:300px;" alt="none" align="top" src="https://www.youtube.com/embed/wXxf43oBMlY" frameborder="0" allowfullscreen></iframe>  
+							</div>
+                            
+						</a>
+						<!--Closing of first link of promotional video-->
+						
+						<!--For linking second promotional video-->
+						<a href="https://www.youtube.com/watch?v=HQJ34jAQKrI" style="text-decoration:none; color:#000; font-size:25px;font-family: AR ESSENCE; padding-left:52px" target="_blank;" >
+							
+							<!--For keeping heading of second promotional video-->
+							<h1 style="padding-top:20px;" class="heading" id="headingOfVideos">Promotional Video 2:</h1>
+                            
+                            <!-- For keeping video of iframe-->
+                            <div class="video">
+                            
+								<!--For keeping the image of promotional videos-->
+								<iframe style="width:530px; height:300px;" alt="none" align="top" src="https://www.youtube.com/embed/HQJ34jAQKrI" frameborder="0" allowfullscreen></iframe>  
+							</div>
+							
+						</a>
+						<!--Ending the link of second promotional video-->
+						
+					</div>
+					<!-- Ending of second main of body part-->
+					
+					<!-- For the third main of body part-->
+					<div style="background-color:#FFF; width:530px; height: 850px;float:left;margin:15px 20px 10px 60px;">   
+					
+						 <!--For linking third promotional video-->
+						<a href="https://www.youtube.com/watch?v=AtlsjFlcRZ0" style="text-decoration:none; color:#000; font-size:25px;font-family: AR ESSENCE; padding-left:52px;" target="_blank;" >
+					
+							<!-- For heading of third promotional video-->
+							<h1 class="heading" id="headingOfVideos">Promotional Video 3:</h1>
+						
+							<!-- For keeping video of iframe-->
+                            <div class="video">
+                            
+								<!--For keeping the image of promotional videos-->
+								<iframe style="width:530px; height:300px;" alt="none" align="top" src="https://www.youtube.com/embed/AtlsjFlcRZ0" frameborder="0" allowfullscreen></iframe>  
+							</div>
+                            
+						</a>
+						<!--Closing of third link of promotional video-->
+						
+						<!--For linking fourth promotional video-->
+						<a href="https://www.youtube.com/watch?v=N59Qp7BHink" style="text-decoration:none; color:#000; font-size:25px;font-family: AR ESSENCE; padding-left:52px" target="_blank;" >
+						
+							<!--For heading of fourth promotional video-->
+							<h1 style="padding-top:20px;" class="heading" id="headingOfVideos">Promotional Video 4:</h1>
+						
+							<!-- For keeping video of iframe-->
+                            <div class="video">
+                            
+								<!--For keeping the image of promotional videos-->
+								<iframe style="width:530px; height:300px;" alt="none" align="top" src="https://www.youtube.com/embed/N59Qp7BHink" frameborder="0" allowfullscreen></iframe>  
+							</div>
+						
+						</a>
+						<!--Ending the link of fourth promotional video-->
+					
+					</div>
+					<!-- Ending of third main of body part-->
+				
+				</div>
+				<!--Ending of main of body part-->
+				
+			</main>
+			<!-- Ending of main-->
+			
+			<!--For footer-->
+			<footer>
+			
+				<small class="copyright"> COPYRIGHT &copy; 2016 </small>
+				
+				<!--for navigation bar-->
+				<nav class="navBackgroundFooter">
+					
+					<!--for navigation link-->   
+					<ul style="list-style:none;">
+					
+						<li style="float:left;">
+							<a href="../index.html" id="footerNavDecoration">
+                            	<div class="footerNav">
+									|| Home | 
+                             	</div>
+                                
+							</a>
+						</li> 
+						
+						<li style="float:left;">
+							<a href="../pages/pictures.html" id="footerNavDecoration">
+                            	<div class="footerNav">
+									| Pictures |
+                                </div>
+                                
+							</a>	
+						</li>
+						
+						<li style="float:left;">
+							<a href="../pages/episodes.html" id="footerNavDecoration">
+                            	<div class="footerNav">
+									| Episodes |
+                                </div>
+                                
+							</a>	
+						</li>
+						
+						<li style="float:left;">
+							<a href="../pages/promotionalVideos.html" id="footerNavDecoration">
+                            	<div class="footerNav" id="selectedFooter">
+									| Promotional Videos |
+                                </div>
+                                 
+							</a>	
+						</li>
+						
+						<li style="float:left;">
+							<a href="../pages/characters.html" id="footerNavDecoration">
+                            	<div class="footerNav">
+									| Characters |
+                                </div>
+                                
+							</a>	
+						</li>
+						
+						<li style="float:left;">
+							<a href="../pages/advertisement.html" id="footerNavDecoration">
+                            	<div class="footerNav">
+									| Advertisement & Manga ||
+                                </div>
+                                
+							</a>	
+						</li>
+						
+					</ul>
+					<!--End of navigation link-->
+				
+				</nav>
+				<!--end of navigation bar-->
+			
+			</footer>
+			<!--Ending of footer-->
+		
+		</div>
+		<!--Ending of div for wrapper-->
+         
+	</body>
+    <!--Ending of body-->
+    
+</html>
+<!--Ending of html tag-->
